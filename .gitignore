@@ -1,0 +1,21 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Raw third-party download (145 MB, over GitHub's 100 MB limit).
+# Re-download with the command in README.md -> "Reproduce".
+data/raw/
+
+# Model checkpoints (added in the training stage; too large for git)
+models/
+checkpoints/
+*.pt
+*.bin
+*.safetensors
+
+# OS / editor / tool files
+.DS_Store
+.claude/
+.vscode/
+.idea/

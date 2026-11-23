@@ -1,0 +1,60 @@
+{
+  "filter": {
+    "not_english": 85917,
+    "kept": 20678,
+    "has_phone_or_id_label": 9482
+  },
+  "eligible_rows": 20678,
+  "sampled": 5000,
+  "splits": {
+    "train": {
+      "examples": 15400,
+      "by_source": {
+        "synthetic": 10400,
+        "ai4privacy": 5000
+      },
+      "spans_per_label": {
+        "PERSON": 11584,
+        "PHONE": 2780,
+        "AADHAAR": 1399,
+        "PAN": 1864,
+        "GSTIN": 604,
+        "BANK_ACCOUNT": 1010,
+        "EMAIL": 2026,
+        "IFSC": 511
+      }
+    },
+    "validation": {
+      "examples": 1300,
+      "by_source": {
+        "synthetic": 1300
+      },
+      "spans_per_label": {
+        "EMAIL": 366,
+        "PHONE": 295,
+        "PERSON": 649,
+        "PAN": 198,
+        "AADHAAR": 198,
+        "BANK_ACCOUNT": 222,
+        "IFSC": 140,
+        "GSTIN": 140
+      }
+    },
+    "test": {
+      "examples": 1300,
+      "by_source": {
+        "synthetic": 1300
+      },
+      "spans_per_label": {
+        "PERSON": 611,
+        "BANK_ACCOUNT": 284,
+        "PHONE": 232,
+        "AADHAAR": 324,
+        "EMAIL": 138,
+        "GSTIN": 172,
+        "PAN": 240,
+        "IFSC": 135
+      }
+    }
+  }
+}

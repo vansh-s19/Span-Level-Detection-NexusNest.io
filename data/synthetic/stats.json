@@ -1,0 +1,57 @@
+{
+  "seed": 42,
+  "splits": {
+    "train": {
+      "examples": 10400,
+      "positive_examples": 8000,
+      "negative_examples": 2400,
+      "positive_templates": 64,
+      "negative_templates": 34,
+      "spans_per_label": {
+        "AADHAAR": 1399,
+        "PAN": 1864,
+        "PHONE": 2780,
+        "EMAIL": 1523,
+        "BANK_ACCOUNT": 1010,
+        "IFSC": 511,
+        "GSTIN": 604,
+        "PERSON": 6780
+      }
+    },
+    "validation": {
+      "examples": 1300,
+      "positive_examples": 1000,
+      "negative_examples": 300,
+      "positive_templates": 14,
+      "negative_templates": 7,
+      "spans_per_label": {
+        "AADHAAR": 198,
+        "PAN": 198,
+        "PHONE": 295,
+        "EMAIL": 366,
+        "BANK_ACCOUNT": 222,
+        "IFSC": 140,
+        "GSTIN": 140,
+        "PERSON": 649
+      }
+    },
+    "test": {
+      "examples": 1300,
+      "positive_examples": 1000,
+      "negative_examples": 300,
+      "positive_templates": 13,
+      "negative_templates": 7,
+      "spans_per_label": {
+        "AADHAAR": 324,
+        "PAN": 240,
+        "PHONE": 232,
+        "EMAIL": 138,
+        "BANK_ACCOUNT": 284,
+        "IFSC": 135,
+        "GSTIN": 172,
+        "PERSON": 611
+      }
+    }
+  },
+  "template_overlap_between_splits": 0
+}

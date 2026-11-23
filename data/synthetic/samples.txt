@@ -1,0 +1,119 @@
+[train-000001] (positive, template P081)
+UID 350490613959 linked with mobile 9162019700
+    AADHAAR          4-16   '350490613959'
+    PHONE           36-46   '9162019700'
+
+[train-000002] (positive, template P017)
+pls summarise the complaint from Murugan Arjun Sheikh regarding ticket 6849965164, her email is murugan.sheikh@hotmail.com
+    PERSON          33-53   'Murugan Arjun Sheikh'
+    EMAIL           96-122  'murugan.sheikh@hotmail.com'
+
+[train-000003] (positive, template P024)
+Mrs. joseph rawat, your account 872673632324034 has been credited with Rs. 14,45,592 on 2022-01-20.
+    PERSON           5-17   'joseph rawat'
+    BANK_ACCOUNT    32-47   '872673632324034'
+
+[train-000004] (positive, template P031)
+Payment of INR 38,49,539 received from Harpreet Subramanian via UTR UTR253929146968. Receipt sent to harpreetrao@yahoo.com.
+    PERSON          39-59   'Harpreet Subramanian'
+    EMAIL          101-122  'harpreetrao@yahoo.com'
+
+[train-000005] (positive, template P006)
+Make a table with these rows: Tanvi Sethi, +91 66495 27616, sethi.tanvi7@icloud.com
+    PERSON          30-41   'Tanvi Sethi'
+    PHONE           43-58   '+91 66495 27616'
+    EMAIL           60-83   'sethi.tanvi7@icloud.com'
+
+[train-000006] (positive, template P075)
+mail me at thomas1944@yahoo.co.in or whatsapp +91 7782156011
+    EMAIL           11-33   'thomas1944@yahoo.co.in'
+    PHONE           46-60   '+91 7782156011'
+
+[train-000007] (positive, template P075)
+mail me at prakash1397@gmail.com or whatsapp 6047338563
+    EMAIL           11-32   'prakash1397@gmail.com'
+    PHONE           45-55   '6047338563'
+
+[train-000008] (positive, template P052)
+insert into customers values ('k. malhotra', '+91-7708638298', '724967211131');
+    PERSON          31-42   'k. malhotra'
+    PHONE           46-60   '+91-7708638298'
+    AADHAAR         64-76   '724967211131'
+
+[validation-000001] (negative, template N038)
+What documents are needed for a GST registration?
+
+[validation-000002] (positive, template P069)
+send it to murugan1913@hotmail.com thx
+    EMAIL           11-34   'murugan1913@hotmail.com'
+
+[validation-000003] (positive, template P034)
+kindly update my mobile no to +91 6184946762 and email to apawar@rediffmail.com, regards Anil Pawar
+    PHONE           30-44   '+91 6184946762'
+    EMAIL           58-79   'apawar@rediffmail.com'
+    PERSON          89-99   'Anil Pawar'
+
+[validation-000004] (positive, template P045)
+Guarantor details: Kunal Reddy, PAN Card No: CKWLK9272H, Aadhaar no. 8992-5139-7155, ph +91 7846980614
+    PERSON          19-30   'Kunal Reddy'
+    PAN             45-55   'CKWLK9272H'
+    AADHAAR         69-83   '8992-5139-7155'
+    PHONE           88-102  '+91 7846980614'
+
+[validation-000005] (positive, template P070)
+acc no 592417258842474942 ifsc CBIN0084237 name Kritika Menon
+    BANK_ACCOUNT     7-25   '592417258842474942'
+    IFSC            31-42   'CBIN0084237'
+    PERSON          48-61   'Kritika Menon'
+
+[validation-000006] (positive, template P045)
+Guarantor details: Ramesh Raman, PAN number MAABJ5802H, aadhar card no 3054 6693 9746, ph 917661520807
+    PERSON          19-31   'Ramesh Raman'
+    PAN             44-54   'MAABJ5802H'
+    AADHAAR         71-85   '3054 6693 9746'
+    PHONE           90-102  '917661520807'
+
+[validation-000007] (positive, template P022)
+hello team, kiran qureshi has joined today. contact: +91 8145221380, qureshi.kiran8@hotmail.com.
+    PERSON          12-25   'kiran qureshi'
+    PHONE           53-67   '+91 8145221380'
+    EMAIL           69-95   'qureshi.kiran8@hotmail.com'
+
+[validation-000008] (positive, template P012)
+Create a cover letter for Kiran Verma, email kiran_verma99@yahoo.com, applying to Kaveri Textiles in Chandigarh.
+    PERSON          26-37   'Kiran Verma'
+    EMAIL           45-68   'kiran_verma99@yahoo.com'
+
+[test-000001] (positive, template P046)
+Account holder: Fatima Rao  account number: 224209359852901439  Branch: Canara Bank, Noida
+    PERSON          16-26   'Fatima Rao'
+    BANK_ACCOUNT    44-62   '224209359852901439'
+
+[test-000002] (negative, template N047)
+ref 999309291 payment failed retry
+
+[test-000003] (positive, template P057)
+ticket 9116254133: user debashish sethi (08875840390) unable to download statement for 2022 2023 2024.
+    PERSON          24-39   'debashish sethi'
+    PHONE           41-52   '08875840390'
+
+[test-000004] (negative, template N009)
+Booking ID 877154749622, seat 23B, departure 3 Dec 2021.
+
+[test-000005] (positive, template P001)
+Write a polite email to Nikhil Bhatt asking them to update Aadhar 996123629603 on the HR portal.
+    PERSON          24-36   'Nikhil Bhatt'
+    AADHAAR         66-78   '996123629603'
+
+[test-000006] (positive, template P051)
+error login failed for joseph.deshpande@outlook.com from coimbatore at 02/09/2024
+    EMAIL           23-51   'joseph.deshpande@outlook.com'
+
+[test-000007] (negative, template N009)
+Booking ID 2599 9923 5827, seat 23B, departure 27 Nov 2023.
+
+[test-000008] (positive, template P001)
+Write a polite email to L. Modi asking them to update Aadhaar 3143 4923 0166 on the HR portal.
+    PERSON          24-31   'L. Modi'
+    AADHAAR         62-76   '3143 4923 0166'
+

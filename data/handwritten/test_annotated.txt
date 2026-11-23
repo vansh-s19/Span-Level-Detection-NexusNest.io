@@ -1,0 +1,162 @@
+# Hand-written test set: realistic sentences NOT produced by the generator.
+#
+# Format: one example per line. PII is marked as [[LABEL|value]].
+#         Lines starting with "## " set the category for the lines below.
+#         Lines starting with "#" are comments. Blank lines are ignored.
+# Convert with:  .venv/bin/python -m datagen.handwritten
+#
+# Names are deliberately NOT taken from the generator's name lists, to test
+# whether the model generalises to unseen names. All values are fictitious.
+# Aadhaar and GSTIN values have valid checksums. Some "hard negative" order
+# numbers below ALSO pass the Aadhaar checksum, on purpose: only context
+# can tell them apart.
+
+## ai_prompts
+Can you write a formal letter to the bank? My name is [[PERSON|Nivedita Raghunathan]] and my account number is [[BANK_ACCOUNT|50100234789012]].
+Rewrite this professionally: "Hi, I'm [[PERSON|Tenzin Dorje]], my Aadhaar is [[AADHAAR|3588 1399 8697]], please process my claim."
+Summarise the attached complaint from [[PERSON|Farhan Siddiqui]] ([[EMAIL|farhan.siddiqui@gmail.com]]) about a late delivery.
+I need a rental agreement draft. Tenant: [[PERSON|Lalremruati Hmar]], PAN [[PAN|BQXPH4421K]]. Landlord: [[PERSON|Om Prakash Chaurasia]].
+Help me reply to [[PERSON|Chitra Venugopal]], she asked whether her PAN [[PAN|AKZPV7719R]] is linked with Aadhaar.
+Translate into Tamil: Your registered mobile [[PHONE|+91 98401 22764]] will receive an OTP shortly.
+Is this a valid GSTIN format: [[GSTIN|19JRJPE6368G1Z8]]? Explain each part.
+Draft an offer letter for [[PERSON|Zubin Irani]], joining on 3 March, CTC 18 LPA.
+Create an Excel formula to split full names like [[PERSON|Ojas Kelkar]] into first and last name columns.
+Our client [[PERSON|Baldev Rana]] wants a refund to account [[BANK_ACCOUNT|31028876540]], IFSC [[IFSC|PUNB0244200]]. Write the request mail.
+Can you check the grammar? "Kindly note my updated contact number [[PHONE|7738290154]] and email [[EMAIL|meenakshi.s@outlook.com]]."
+Make a short bio for Dr. [[PERSON|Anushree Bhattacharya]], cardiologist in Kolkata.
+Explain why my ITR got rejected. PAN [[PAN|CFRPD8821M]], assessment year 2025-26.
+Write a WhatsApp reminder to [[PERSON|Hrithik Bhardwaj]] that his EMI of Rs 12,450 is due on the 5th.
+Convert this to JSON: name [[PERSON|Sowmya Ranganathan]], aadhaar [[AADHAAR|997309114173]], city Mysuru
+My grandmother [[PERSON|Kamala Devi]] can't remember her Aadhaar [[AADHAAR|2753 6455 6810]], how do we download e-Aadhaar?
+Please prepare a vendor onboarding checklist for [[GSTIN|25KRIFB9712V4ZB]] (Bharat Steel Works).
+Write a thank-you note to [[PERSON|Rukmini]] and [[PERSON|Devendra]] for attending the workshop.
+I got a call from [[PHONE|+91-9123408876]] claiming to be from SBI. Is this a scam?
+Format this as a table: [[PERSON|Ishita Ghoshal]] | [[EMAIL|ishita.g@zenmail.in]] | [[PHONE|8800441927]]
+My employer deposited salary to [[BANK_ACCOUNT|920010045523781]] but HDFC says the IFSC [[IFSC|HDFC0001786]] is wrong. What should I do?
+Can you explain PAN structure using this example: [[PAN|AAACR5055K]]?
+Suggest a polite way to ask Mr. [[PERSON|Venkataraman]] for his GST certificate.
+Prepare a KYC summary for [[PERSON|Neelam Thakkar]]: Aadhaar [[AADHAAR|7188-4472-9402]], PAN [[PAN|DMRPT3367Q]], mobile [[PHONE|9898012345]].
+Write Python code to validate an email like [[EMAIL|support.team@nimbus-labs.co.in]].
+What should [[PERSON|Ayaan]] do if his debit card linked to account [[BANK_ACCOUNT|004401567832]] is lost?
+
+## emails_messages
+Hi [[PERSON|Sandeep]], please send the signed NDA by Friday. Thanks, [[PERSON|Mehak]]
+Dear Ms. [[PERSON|Priyamvada Joshi]], your policy documents have been sent to [[EMAIL|priyamvada.joshi@rediffmail.com]].
+Team, [[PERSON|Arvind Swamy]] will cover my calls this week. Reach him on [[PHONE|96866 21430]].
+Please credit the reimbursement to A/C [[BANK_ACCOUNT|10293847561]], IFSC [[IFSC|SBIN0011254]], SBI Jayanagar.
+FYI the vendor's GSTIN is [[GSTIN|31NLZTF8458A3ZC]] and the invoice total is Rs. 2,48,000.
+Hello, I am [[PERSON|Gurleen Kaur Bains]], writing to update my Aadhaar number [[AADHAAR|7576 1698 7168]] in your records.
+Forwarding [[PERSON|Ritwik]]'s details for the background check: PAN [[PAN|ELKPR0092A]], DOB 14/09/1996.
+Regards,\n[[PERSON|Shreyas Patwardhan]]\nSenior Analyst\n[[PHONE|+91 77098 34521]]
+Can someone call Mrs. [[PERSON|D'Costa]] back on [[PHONE|9821054673]]? She called about the warranty.
+Your OTP for login is 482913. Do not share it with anyone.
+The candidate [[PERSON|Abhinav Sengupta]] can be reached at [[EMAIL|abhinav.sengupta94@yahoo.co.in]] or [[PHONE|8017724551]].
+Payment of Rs 45,000 has been transferred to [[PERSON|Kiran Lata]] (A/c [[BANK_ACCOUNT|6011002238719]]).
+Please register [[GSTIN|10FADTV0033L2ZO]] as a new supplier before the next PO.
+Hey, it's [[PERSON|Joel]]. Lost my phone, use [[EMAIL|joel.mathews.work@gmail.com]] for now.
+Reminder from HR: [[PERSON|Snehal Bhosale]] has not submitted her PAN copy yet.
+Dear Customer, your account ending 4471 has been debited with Rs 1,999 on 12-Nov-2026.
+[[PERSON|Vikrant]], the courier tracking number is 463884985568, it should reach by Monday.
+Please update nominee as [[PERSON|Harini Subramaniam]], Aadhaar [[AADHAAR|9684 6978 8096]].
+
+## forms_records
+Name: [[PERSON|Mohd. Arshad Ali]]  Aadhaar: [[AADHAAR|520819672734]]  Mobile: [[PHONE|9935507712]]
+Applicant Name - [[PERSON|Tanushree Mohanty]] | PAN - [[PAN|BHWPM5583L]] | Income - 9,40,000
+Beneficiary: [[PERSON|Raghav Malviya]], A/c No: [[BANK_ACCOUNT|38123399845]], IFSC: [[IFSC|UBIN0531758]]
+Supplier: Kaveri Agro Foods | GSTIN: [[GSTIN|29IERFH5436E9ZE]] | Contact: [[PERSON|Ponnusamy]] [[PHONE|94431 66002]]
+Emp Code: KA1043 | Name: [[PERSON|Ishaan Bhatnagar]] | Email: [[EMAIL|ishaan.b@acmecorp.in]]
+Patient: [[PERSON|Shabnam Begum]], Age 54, Contact [[PHONE|7006123498]], Ward 3B
+Student ID 2023CS1145, Name [[PERSON|Aditi Rawal]], Guardian phone [[PHONE|+919811230045]]
+Aadhaar No. [[AADHAAR|3778 4864 8879]] | Name as per Aadhaar: [[PERSON|Bhupinder Singh]]
+PAN: [[PAN|ACVPN6642G]]   Name: [[PERSON|Nandakumar Pillai]]   Father's Name: [[PERSON|Gopalakrishna Pillai]]
+Order ID: 2612-4883-6152 | Customer: [[PERSON|Rhea Fernandes]] | Phone: [[PHONE|9768800231]]
+Invoice No 801543161030 | GSTIN [[GSTIN|36KKXAM5140F4ZD]] | Amount 18,880.00
+Consignee: [[PERSON|Lobsang Tsering]], Leh 194101. Ph: [[PHONE|9419877610]]
+Bank: ICICI | A/c: [[BANK_ACCOUNT|000701562398]] | IFSC: [[IFSC|ICIC0000007]] | Holder: [[PERSON|Megha Agnihotri]]
+Policy No 823861352122 | Insured: [[PERSON|Satyajit Ray Chaudhuri]] | Nominee: [[PERSON|Ananya Ray Chaudhuri]]
+
+## code_logs
+user = {"name": "[[PERSON|Pranjal Saikia]]", "aadhaar": "[[AADHAAR|8634-4002-9783]]", "phone": "[[PHONE|9101123456]]"}
+INSERT INTO kyc (pan, email) VALUES ('[[PAN|AJPPK1029B]]', '[[EMAIL|k.pillai@corpmail.com]]');
+2026-11-20 10:42:01 ERROR auth: OTP verification failed for [[PHONE|+918849012233]]
+WARN payment_service: retry 3/5 for txn 720568326607 (amount=1499.00)
+customers.csv: id,name,phone\n17,[[PERSON|Yamini Reddy]],[[PHONE|9000434512]]
+curl -X POST /api/users -d '{"email":"[[EMAIL|dev.test.user@nimbus.io]]","role":"admin"}'
+assert validate_pan("[[PAN|BNZPM2804C]]") == True
+logger.info(f"Created account {acct_id} for {user_name}")  # no PII here, only variables
+SELECT * FROM orders WHERE order_id = 238637877604 AND status = 'SHIPPED';
+const ifsc = "[[IFSC|KKBK0000958]]"; const acc = "[[BANK_ACCOUNT|7712849901]]";
+gst_number: [[GSTIN|05MITFU1926L8ZN]]\nstate_code: 05\ninvoice_series: UK/2026/
+DEBUG build 4.12.7 deployed to prod at 2026-11-21T09:00Z by ci-runner-12
+{"order":"205948201833","sku":"KXMTR4471P","qty":2}
+email_regex = r"[^@]+@[^@]+\.[^@]+"  # used to validate [[EMAIL|someone@example.com]]-style input
+
+## hinglish_informal
+bhai mera aadhar [[AADHAAR|9534 7787 6803]] hai, isko update kar dena
+[[PERSON|Pinky]] ka number [[PHONE|9876012345]] hai, usse baat kar lo
+mera pan card [[PAN|FKTPS4590E]] hai, ITR file karna hai help karo
+paisa [[BANK_ACCOUNT|20014587903]] me bhej do, ifsc [[IFSC|BARB0VJAMSH]]
+sir mera email [[EMAIL|rohitkr.1999@gmail.com]] pe bhej dijiye
+yaar [[PERSON|Golu]] ne order 956378276082 cancel kar diya
+pls call me on [[PHONE|8340012876]] urgent hai
+aadhaar no [[AADHAAR|6571 7847 2673]] wala card kho gaya, kya karu
+gst no [[GSTIN|37BMMTQ2590Q2ZR]] check karo valid hai kya
+[[PERSON|Sunaina]] didi ka pan [[PAN|CQUPS8812H]] aur mobile [[PHONE|9599304821]]
+order no 686316653989 abhi tak nahi aaya
+mere ko 2023-2024-2025 ka data chahiye sales ka
+tracking id 625284561863 se pata karo kaha hai parcel
+mera uid [[AADHAAR|347513627015]] hai aur dob 1 jan 1990
+whatsapp kar do [[PHONE|+91 9711 223344]] pe
+plz share ur email id
+ok [[PERSON|Aman]] bhai done
+kal [[PERSON|Mishra]] ji ko 50k transfer karna hai
+
+## hard_negatives
+Your order 261488361520 has been dispatched.
+Invoice 848525802579 dated 03/11/2026 is overdue by 15 days.
+Please quote reference number 605548367088 in all future correspondence.
+The tracking number for your shipment is 9853 1624 4871.
+PNR 8421903356 is confirmed, coach B2, seat 41.
+Ticket #7738291045 has been escalated to the L2 team.
+Product code ABCPE1234K is discontinued; use ABCPE1235K instead.
+Batch KLMNP2045Q failed QA on 12 Nov.
+Part number SBIN0X12345 is not a bank code, it's our internal SKU.
+Budget allocation for 2024-2025-2026 is attached.
+The sum of 9743 6403 2012 and 1 is easy to compute.
+Call our toll-free number 1800 209 4999 for help.
+What is the structure of an Aadhaar number and how is it validated?
+How do I find my PAN if I have lost the card?
+Total amount payable: Rs. 3,72,290 inclusive of taxes.
+The consignment weighs 277 kg and was shipped on 27/07/2025.
+Employee code EMP36992 has completed onboarding.
+Version 3.69.92 introduced the new checkout flow.
+UTR number 945143511593 for the NEFT transfer of Rs 25,000.
+Room 987, Building 366, Sector 74 is the new office.
+The meeting ID is 523 124 5287.
+Pincode 560034 belongs to Koramangala, Bengaluru.
+Use the IFSC code printed on your cheque book.
+Account number should be between 9 and 18 digits.
+Enter your 12-digit Aadhaar number in the form below.
+GSTIN has 15 characters: state code, PAN, entity code, Z and a checksum.
+Policy 862712520426 renewed till March 2027.
+Gaming ID 7116 2695 8359 has been banned for cheating.
+
+## mixed_tricky
+My Aadhaar is [[AADHAAR|2798 1933 1904]] and my order number is 2061 4431 7746, please don't mix them up.
+PAN [[PAN|GHTPK5521D]] belongs to [[PERSON|Kunal Mehrotra]]; SKU GHTPK5521X is the laptop he ordered.
+Ref 369929383271: refund for [[PERSON|Asha Nambiar]] to account [[BANK_ACCOUNT|40012239857]].
+Call [[PHONE|9810022334]] for delivery, not the ticket number 9810022335 printed on the slip.
+Aadhaar [[AADHAAR|6520 5997 2837]] was linked to mobile [[PHONE|7303344120]] on 12 March.
+Transaction 482431433591 by [[PERSON|Karthikeyan]] failed; retry from [[EMAIL|karthik.s@icloud.com]].
+The bank IFSC is [[IFSC|YESB0000262]] but the branch code on the slip is 000262.
+GSTIN [[GSTIN|22BMXCA4376R5ZX]] contains the PAN [[PAN|BMXCA4376R]] inside it.
+Account [[BANK_ACCOUNT|9876543210123]] for [[PERSON|Sameera Qazi]], phone [[PHONE|9876543210]].
+Please verify Aadhaar [[AADHAAR|9929 8416 2290]]; ignore the invoice 9929 8416 2291 printed above it.
+[[PERSON|Rajat]] from 2020 to 2025 handled accounts worth Rs 4,52,47,764.
+Send the OTP 774091 only to [[PHONE|+91 81234 56709]].
+Nominee [[PERSON|Fiona Lobo]] (email [[EMAIL|fiona.lobo@protonmail.com]]) was added on 2026-01-05.
+Our GST number is [[GSTIN|27YZPAK0193B4ZJ]]; PO number is 27-2026-0193.
+PAN [[PAN|AEWPV9921N]] is linked; old ID card number EWPV-9921 is no longer valid.
+Old phone [[PHONE|9967012003]] deactivated, new phone [[PHONE|9967012004]] active.
+[[PERSON|Deepa]] and [[PERSON|Joseph Kurian]] co-own account [[BANK_ACCOUNT|67203348891]] at [[IFSC|FDRL0001234]].
+Order 711626958359 and Aadhaar [[AADHAAR|686628360169]] were both pasted in the chat by mistake.
