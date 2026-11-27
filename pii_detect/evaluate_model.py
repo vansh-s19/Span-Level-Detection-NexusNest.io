@@ -13,6 +13,7 @@ Writes:
 
 from __future__ import annotations
 
+import argparse
 import json
 from collections import defaultdict
 from pathlib import Path
@@ -28,8 +29,12 @@ def fmt(x: float) -> str:
     return f"{x * 100:5.1f}"
 
 
-def main(model_dir: str = "models/distilbert-pii") -> None:
-    model = PIIModel.load(model_dir)
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default="models/distilbert-pii")
+    ap.add_argument("--out", type=Path, default=Path("results"), help="folder for the result files")
+    args = ap.parse_args()
+    model = PIIModel.load(args.model)
     preflight, checksum = PreflightRegex(), RegexChecksum()
     systems = {
         "Pre-flight regex": lambda texts: [preflight.predict(t) for t in texts],
@@ -37,9 +42,13 @@ def main(model_dir: str = "models/distilbert-pii") -> None:
         "DistilBERT": lambda texts: model.predict_batch(texts),
         "DistilBERT + checksum filter": lambda texts: model.predict_batch(texts, checksum_filter=True),
         "DistilBERT + post-proc": lambda texts: model.predict_batch(texts, postprocess_level=3),
-        "DistilBERT + post-proc + checksum (final)": lambda texts: model.predict_batch(
+        "DistilBERT + post-proc + checksum": lambda texts: model.predict_batch(
             texts, postprocess_level=3, checksum_filter=True),
+        "DistilBERT + post-proc + words + checksum": lambda texts: model.predict_batch(
+            texts, postprocess_level=4, checksum_filter=True),
+        "DistilBERT + normalise + post-proc + repair (final)": lambda texts: model.detect_batch(texts),
     }
+    final = "DistilBERT + normalise + post-proc + repair (final)"
 
     results, md = {}, ["# DistilBERT results vs baselines\n",
                        "Strict = exact start, end and label. False alarms = share of PII-free sentences with any alert.\n"]
@@ -92,7 +101,7 @@ def main(model_dir: str = "models/distilbert-pii") -> None:
         # Error listing for the model (with checksum filter = final system)
         errors.append(f"\n## {set_name}\n")
         shown, limit = 0, (10_000 if set_name == "handwritten_test" else 25)
-        for ex, pr in zip(examples, preds_by_system["DistilBERT + post-proc + checksum (final)"]):
+        for ex, pr in zip(examples, preds_by_system[final]):
             gold = {(s["start"], s["end"], s["label"]) for s in ex["spans"]}
             got = {(s["start"], s["end"], s["label"]) for s in pr}
             if gold != got and shown < limit:
@@ -104,10 +113,10 @@ def main(model_dir: str = "models/distilbert-pii") -> None:
                     errors.append(f"  - MISSED {l}: `{ex['text'][s:e]}`")
         errors.append(f"\n({shown} sentences with at least one error shown)\n")
 
-    Path("results").mkdir(exist_ok=True)
-    Path("results/model_results.json").write_text(json.dumps(results, indent=2))
-    Path("results/model_results.md").write_text("\n".join(md) + "\n")
-    Path("results/model_errors.md").write_text("\n".join(errors) + "\n")
+    args.out.mkdir(parents=True, exist_ok=True)
+    (args.out / "model_results.json").write_text(json.dumps(results, indent=2))
+    (args.out / "model_results.md").write_text("\n".join(md) + "\n")
+    (args.out / "model_errors.md").write_text("\n".join(errors) + "\n")
     print("\n".join(md))
 
 

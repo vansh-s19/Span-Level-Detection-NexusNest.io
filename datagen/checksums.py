@@ -89,4 +89,8 @@ def gstin_check_char(first14: str) -> str:
 
 def is_valid_gstin(value: str) -> bool:
     value = value.strip().upper()
-    return len(value) == 15 and gstin_check_char(value[:14]) == value[14]
+    # Check the characters first: gstin_check_char() raises ValueError on anything
+    # outside 0-9 / A-Z ("29ABCDE1234F-Z5"), which used to crash a whole batch.
+    if len(value) != 15 or any(ch not in _GST_CHARS for ch in value):
+        return False
+    return gstin_check_char(value[:14]) == value[14]
