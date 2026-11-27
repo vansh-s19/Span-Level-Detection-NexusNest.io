@@ -28,7 +28,8 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")  # model is local; never go online
 from .model import FINAL, PIIModel  # noqa: E402
 
 COLORS = {"AADHAAR": "41", "PAN": "45", "PHONE": "44", "EMAIL": "46",
-          "BANK_ACCOUNT": "43;30", "IFSC": "42;30", "GSTIN": "47;30", "PERSON": "101"}
+          "BANK_ACCOUNT": "43;30", "IFSC": "42;30", "GSTIN": "47;30", "PERSON": "101",
+          "UPI": "105", "CARD": "41;97", "VID": "104"}
 # Default model folder, found relative to this file so the demo works from any directory.
 DEFAULT_MODEL = Path(__file__).resolve().parent.parent / "models" / "distilbert-pii"
 

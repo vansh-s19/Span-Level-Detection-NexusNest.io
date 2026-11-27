@@ -561,11 +561,11 @@
           "support": 240
         },
         "PHONE": {
-          "precision": 0.9398148148148148,
+          "precision": 1.0,
           "recall": 0.875,
-          "f1": 0.9062499999999999,
+          "f1": 0.9333333333333333,
           "tp": 203,
-          "fp": 13,
+          "fp": 0,
           "fn": 29,
           "support": 232
         },
@@ -579,20 +579,20 @@
           "support": 138
         },
         "BANK_ACCOUNT": {
-          "precision": 0.695,
+          "precision": 0.8249258160237388,
           "recall": 0.9788732394366197,
-          "f1": 0.8128654970760233,
+          "f1": 0.895330112721417,
           "tp": 278,
-          "fp": 122,
+          "fp": 59,
           "fn": 6,
           "support": 284
         },
         "IFSC": {
-          "precision": 0.42857142857142855,
+          "precision": 1.0,
           "recall": 0.5333333333333333,
-          "f1": 0.4752475247524753,
+          "f1": 0.6956521739130436,
           "tp": 72,
-          "fp": 96,
+          "fp": 0,
           "fn": 63,
           "support": 135
         },
@@ -616,18 +616,18 @@
         }
       },
       "micro": {
-        "precision": 0.8694222639736966,
+        "precision": 0.945835462442514,
         "recall": 0.8665730337078652,
-        "f1": 0.8679953106682298,
+        "f1": 0.9044710481309552,
         "tp": 1851,
-        "fp": 278,
+        "fp": 106,
         "fn": 285,
         "support": 2136
       },
-      "macro_f1": 0.8325038796487648,
-      "false_alarm_rate": 0.0033333333333333335,
+      "macro_f1": 0.8737479544161768,
+      "false_alarm_rate": 0.0,
       "negative_sentences": 300,
-      "negative_sentences_with_alarm": 1
+      "negative_sentences_with_alarm": 0
     },
     "partial": {
       "per_label": {
@@ -650,12 +650,12 @@
           "support": 240
         },
         "PHONE": {
-          "precision": 0.9814814814814815,
-          "recall": 0.9137931034482759,
-          "f1": 0.9464285714285714,
-          "tp": 212,
-          "fp": 4,
-          "fn": 20,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "tp": 203,
+          "fp": 0,
+          "fn": 29,
           "support": 232
         },
         "EMAIL": {
@@ -668,21 +668,21 @@
           "support": 138
         },
         "BANK_ACCOUNT": {
-          "precision": 0.71,
-          "recall": 1.0,
-          "f1": 0.8304093567251462,
-          "tp": 284,
-          "fp": 116,
-          "fn": 0,
+          "precision": 0.8249258160237388,
+          "recall": 0.9788732394366197,
+          "f1": 0.895330112721417,
+          "tp": 278,
+          "fp": 59,
+          "fn": 6,
           "support": 284
         },
         "IFSC": {
-          "precision": 0.7321428571428571,
-          "recall": 0.9111111111111111,
-          "f1": 0.8118811881188118,
-          "tp": 123,
-          "fp": 45,
-          "fn": 12,
+          "precision": 1.0,
+          "recall": 0.5333333333333333,
+          "f1": 0.6956521739130436,
+          "tp": 72,
+          "fp": 0,
+          "fn": 63,
           "support": 135
         },
         "GSTIN": {
@@ -705,18 +705,18 @@
         }
       },
       "micro": {
-        "precision": 0.9168623767026773,
-        "recall": 0.9138576779026217,
-        "f1": 0.9153575615474795,
-        "tp": 1952,
-        "fp": 177,
-        "fn": 184,
+        "precision": 0.9637199795605519,
+        "recall": 0.8829588014981273,
+        "f1": 0.9215734180307843,
+        "tp": 1886,
+        "fp": 71,
+        "fn": 250,
         "support": 2136
       },
-      "macro_f1": 0.8890178634014633,
-      "false_alarm_rate": 0.0033333333333333335,
+      "macro_f1": 0.8809674263633716,
+      "false_alarm_rate": 0.0,
       "negative_sentences": 300,
-      "negative_sentences_with_alarm": 1
+      "negative_sentences_with_alarm": 0
     }
   },
   "synthetic_test/DistilBERT + post-proc": {
@@ -899,7 +899,7 @@
       "negative_sentences_with_alarm": 6
     }
   },
-  "synthetic_test/DistilBERT + post-proc + checksum (final)": {
+  "synthetic_test/DistilBERT + post-proc + checksum": {
     "strict": {
       "per_label": {
         "AADHAAR": {
@@ -921,11 +921,11 @@
           "support": 240
         },
         "PHONE": {
-          "precision": 0.9952153110047847,
+          "precision": 1.0,
           "recall": 0.896551724137931,
-          "f1": 0.9433106575963719,
+          "f1": 0.9454545454545454,
           "tp": 208,
-          "fp": 1,
+          "fp": 0,
           "fn": 24,
           "support": 232
         },
@@ -939,20 +939,20 @@
           "support": 138
         },
         "BANK_ACCOUNT": {
-          "precision": 0.7091836734693877,
+          "precision": 0.8298507462686567,
           "recall": 0.9788732394366197,
-          "f1": 0.8224852071005916,
+          "f1": 0.8982229402261712,
           "tp": 278,
-          "fp": 114,
+          "fp": 57,
           "fn": 6,
           "support": 284
         },
         "IFSC": {
-          "precision": 0.9852941176470589,
+          "precision": 1.0,
           "recall": 0.9925925925925926,
-          "f1": 0.988929889298893,
+          "f1": 0.996282527881041,
           "tp": 134,
-          "fp": 2,
+          "fp": 0,
           "fn": 1,
           "support": 135
         },
@@ -976,18 +976,18 @@
         }
       },
       "micro": {
-        "precision": 0.9269406392694064,
+        "precision": 0.9530516431924883,
         "recall": 0.950374531835206,
-        "f1": 0.9385113268608414,
+        "f1": 0.9517112048757619,
         "tp": 2030,
-        "fp": 160,
+        "fp": 100,
         "fn": 106,
         "support": 2136
       },
-      "macro_f1": 0.9550467579044657,
-      "false_alarm_rate": 0.0033333333333333335,
+      "macro_f1": 0.9657010403502033,
+      "false_alarm_rate": 0.0,
       "negative_sentences": 300,
-      "negative_sentences_with_alarm": 1
+      "negative_sentences_with_alarm": 0
     },
     "partial": {
       "per_label": {
@@ -1011,11 +1011,11 @@
         },
         "PHONE": {
           "precision": 1.0,
-          "recall": 0.9008620689655172,
-          "f1": 0.9478458049886621,
-          "tp": 209,
+          "recall": 0.896551724137931,
+          "f1": 0.9454545454545454,
+          "tp": 208,
           "fp": 0,
-          "fn": 23,
+          "fn": 24,
           "support": 232
         },
         "EMAIL": {
@@ -1028,21 +1028,21 @@
           "support": 138
         },
         "BANK_ACCOUNT": {
-          "precision": 0.7244897959183674,
-          "recall": 1.0,
-          "f1": 0.8402366863905326,
-          "tp": 284,
-          "fp": 108,
-          "fn": 0,
+          "precision": 0.8298507462686567,
+          "recall": 0.9788732394366197,
+          "f1": 0.8982229402261712,
+          "tp": 278,
+          "fp": 57,
+          "fn": 6,
           "support": 284
         },
         "IFSC": {
-          "precision": 0.9926470588235294,
-          "recall": 1.0,
-          "f1": 0.996309963099631,
-          "tp": 135,
-          "fp": 1,
-          "fn": 0,
+          "precision": 1.0,
+          "recall": 0.9925925925925926,
+          "f1": 0.996282527881041,
+          "tp": 134,
+          "fp": 0,
+          "fn": 1,
           "support": 135
         },
         "GSTIN": {
@@ -1065,18 +1065,378 @@
         }
       },
       "micro": {
-        "precision": 0.9465753424657535,
-        "recall": 0.9705056179775281,
-        "f1": 0.958391123439667,
-        "tp": 2073,
-        "fp": 117,
-        "fn": 63,
+        "precision": 0.9694835680751174,
+        "recall": 0.9667602996254682,
+        "f1": 0.9681200187529302,
+        "tp": 2065,
+        "fp": 65,
+        "fn": 71,
         "support": 2136
       },
-      "macro_f1": 0.9659745674120317,
-      "false_alarm_rate": 0.0033333333333333335,
+      "macro_f1": 0.9729205122973981,
+      "false_alarm_rate": 0.0,
       "negative_sentences": 300,
-      "negative_sentences_with_alarm": 1
+      "negative_sentences_with_alarm": 0
+    }
+  },
+  "synthetic_test/DistilBERT + post-proc + words + checksum": {
+    "strict": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 1.0,
+          "recall": 0.9320987654320988,
+          "f1": 0.9648562300319489,
+          "tp": 302,
+          "fp": 0,
+          "fn": 22,
+          "support": 324
+        },
+        "PAN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 240,
+          "fp": 0,
+          "fn": 0,
+          "support": 240
+        },
+        "PHONE": {
+          "precision": 1.0,
+          "recall": 0.896551724137931,
+          "f1": 0.9454545454545454,
+          "tp": 208,
+          "fp": 0,
+          "fn": 24,
+          "support": 232
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 138,
+          "fp": 0,
+          "fn": 0,
+          "support": 138
+        },
+        "BANK_ACCOUNT": {
+          "precision": 0.8298507462686567,
+          "recall": 0.9788732394366197,
+          "f1": 0.8982229402261712,
+          "tp": 278,
+          "fp": 57,
+          "fn": 6,
+          "support": 284
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 0.9925925925925926,
+          "f1": 0.996282527881041,
+          "tp": 134,
+          "fp": 0,
+          "fn": 1,
+          "support": 135
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 172,
+          "fp": 0,
+          "fn": 0,
+          "support": 172
+        },
+        "PERSON": {
+          "precision": 0.9351081530782029,
+          "recall": 0.9198036006546645,
+          "f1": 0.9273927392739274,
+          "tp": 562,
+          "fp": 39,
+          "fn": 49,
+          "support": 611
+        }
+      },
+      "micro": {
+        "precision": 0.9549295774647887,
+        "recall": 0.952247191011236,
+        "f1": 0.9535864978902953,
+        "tp": 2034,
+        "fp": 96,
+        "fn": 102,
+        "support": 2136
+      },
+      "macro_f1": 0.9665261228584542,
+      "false_alarm_rate": 0.0,
+      "negative_sentences": 300,
+      "negative_sentences_with_alarm": 0
+    },
+    "partial": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 1.0,
+          "recall": 0.9320987654320988,
+          "f1": 0.9648562300319489,
+          "tp": 302,
+          "fp": 0,
+          "fn": 22,
+          "support": 324
+        },
+        "PAN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 240,
+          "fp": 0,
+          "fn": 0,
+          "support": 240
+        },
+        "PHONE": {
+          "precision": 1.0,
+          "recall": 0.896551724137931,
+          "f1": 0.9454545454545454,
+          "tp": 208,
+          "fp": 0,
+          "fn": 24,
+          "support": 232
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 138,
+          "fp": 0,
+          "fn": 0,
+          "support": 138
+        },
+        "BANK_ACCOUNT": {
+          "precision": 0.8298507462686567,
+          "recall": 0.9788732394366197,
+          "f1": 0.8982229402261712,
+          "tp": 278,
+          "fp": 57,
+          "fn": 6,
+          "support": 284
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 0.9925925925925926,
+          "f1": 0.996282527881041,
+          "tp": 134,
+          "fp": 0,
+          "fn": 1,
+          "support": 135
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 172,
+          "fp": 0,
+          "fn": 0,
+          "support": 172
+        },
+        "PERSON": {
+          "precision": 0.9866888519134775,
+          "recall": 0.9705400981996727,
+          "f1": 0.9785478547854787,
+          "tp": 593,
+          "fp": 8,
+          "fn": 18,
+          "support": 611
+        }
+      },
+      "micro": {
+        "precision": 0.9694835680751174,
+        "recall": 0.9667602996254682,
+        "f1": 0.9681200187529302,
+        "tp": 2065,
+        "fp": 65,
+        "fn": 71,
+        "support": 2136
+      },
+      "macro_f1": 0.9729205122973981,
+      "false_alarm_rate": 0.0,
+      "negative_sentences": 300,
+      "negative_sentences_with_alarm": 0
+    }
+  },
+  "synthetic_test/DistilBERT + normalise + post-proc + repair (final)": {
+    "strict": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 0.9969230769230769,
+          "recall": 1.0,
+          "f1": 0.9984591679506933,
+          "tp": 324,
+          "fp": 1,
+          "fn": 0,
+          "support": 324
+        },
+        "PAN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 240,
+          "fp": 0,
+          "fn": 0,
+          "support": 240
+        },
+        "PHONE": {
+          "precision": 0.987012987012987,
+          "recall": 0.9827586206896551,
+          "f1": 0.9848812095032398,
+          "tp": 228,
+          "fp": 3,
+          "fn": 4,
+          "support": 232
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 138,
+          "fp": 0,
+          "fn": 0,
+          "support": 138
+        },
+        "BANK_ACCOUNT": {
+          "precision": 0.889937106918239,
+          "recall": 0.9964788732394366,
+          "f1": 0.9401993355481728,
+          "tp": 283,
+          "fp": 35,
+          "fn": 1,
+          "support": 284
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 135,
+          "fp": 0,
+          "fn": 0,
+          "support": 135
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 172,
+          "fp": 0,
+          "fn": 0,
+          "support": 172
+        },
+        "PERSON": {
+          "precision": 0.9545454545454546,
+          "recall": 0.9279869067103109,
+          "f1": 0.9410788381742738,
+          "tp": 567,
+          "fp": 27,
+          "fn": 44,
+          "support": 611
+        }
+      },
+      "micro": {
+        "precision": 0.9693450998606595,
+        "recall": 0.9770599250936329,
+        "f1": 0.9731872231289346,
+        "tp": 2087,
+        "fp": 66,
+        "fn": 49,
+        "support": 2136
+      },
+      "macro_f1": 0.9830773188970475,
+      "false_alarm_rate": 0.0,
+      "negative_sentences": 300,
+      "negative_sentences_with_alarm": 0
+    },
+    "partial": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 0.9969230769230769,
+          "recall": 1.0,
+          "f1": 0.9984591679506933,
+          "tp": 324,
+          "fp": 1,
+          "fn": 0,
+          "support": 324
+        },
+        "PAN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 240,
+          "fp": 0,
+          "fn": 0,
+          "support": 240
+        },
+        "PHONE": {
+          "precision": 0.987012987012987,
+          "recall": 0.9827586206896551,
+          "f1": 0.9848812095032398,
+          "tp": 228,
+          "fp": 3,
+          "fn": 4,
+          "support": 232
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 138,
+          "fp": 0,
+          "fn": 0,
+          "support": 138
+        },
+        "BANK_ACCOUNT": {
+          "precision": 0.889937106918239,
+          "recall": 0.9964788732394366,
+          "f1": 0.9401993355481728,
+          "tp": 283,
+          "fp": 35,
+          "fn": 1,
+          "support": 284
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 135,
+          "fp": 0,
+          "fn": 0,
+          "support": 135
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 172,
+          "fp": 0,
+          "fn": 0,
+          "support": 172
+        },
+        "PERSON": {
+          "precision": 0.9983164983164983,
+          "recall": 0.9705400981996727,
+          "f1": 0.9842323651452283,
+          "tp": 593,
+          "fp": 1,
+          "fn": 18,
+          "support": 611
+        }
+      },
+      "micro": {
+        "precision": 0.981421272642824,
+        "recall": 0.9892322097378277,
+        "f1": 0.9853112613662859,
+        "tp": 2113,
+        "fp": 40,
+        "fn": 23,
+        "support": 2136
+      },
+      "macro_f1": 0.9884715097684168,
+      "false_alarm_rate": 0.0,
+      "negative_sentences": 300,
+      "negative_sentences_with_alarm": 0
     }
   },
   "handwritten_test/Pre-flight regex": {
@@ -1641,20 +2001,20 @@
           "support": 15
         },
         "PHONE": {
-          "precision": 0.9310344827586207,
+          "precision": 1.0,
           "recall": 0.9642857142857143,
-          "f1": 0.9473684210526316,
+          "f1": 0.9818181818181818,
           "tp": 27,
-          "fp": 2,
+          "fp": 0,
           "fn": 1,
           "support": 28
         },
         "EMAIL": {
-          "precision": 0.875,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.9333333333333333,
+          "f1": 1.0,
           "tp": 14,
-          "fp": 2,
+          "fp": 0,
           "fn": 0,
           "support": 14
         },
@@ -1696,18 +2056,18 @@
         }
       },
       "micro": {
-        "precision": 0.9064327485380117,
+        "precision": 0.9281437125748503,
         "recall": 0.9226190476190477,
-        "f1": 0.9144542772861357,
+        "f1": 0.9253731343283582,
         "tp": 155,
-        "fp": 16,
+        "fp": 12,
         "fn": 13,
         "support": 168
       },
-      "macro_f1": 0.9294466936572199,
-      "false_alarm_rate": 0.05128205128205128,
+      "macro_f1": 0.942086247086247,
+      "false_alarm_rate": 0.02564102564102564,
       "negative_sentences": 39,
-      "negative_sentences_with_alarm": 2
+      "negative_sentences_with_alarm": 1
     },
     "partial": {
       "per_label": {
@@ -1730,20 +2090,20 @@
           "support": 15
         },
         "PHONE": {
-          "precision": 0.9310344827586207,
+          "precision": 1.0,
           "recall": 0.9642857142857143,
-          "f1": 0.9473684210526316,
+          "f1": 0.9818181818181818,
           "tp": 27,
-          "fp": 2,
+          "fp": 0,
           "fn": 1,
           "support": 28
         },
         "EMAIL": {
-          "precision": 0.875,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.9333333333333333,
+          "f1": 1.0,
           "tp": 14,
-          "fp": 2,
+          "fp": 0,
           "fn": 0,
           "support": 14
         },
@@ -1785,18 +2145,18 @@
         }
       },
       "micro": {
-        "precision": 0.935672514619883,
+        "precision": 0.9580838323353293,
         "recall": 0.9523809523809523,
-        "f1": 0.943952802359882,
+        "f1": 0.9552238805970149,
         "tp": 160,
-        "fp": 11,
+        "fp": 7,
         "fn": 8,
         "support": 168
       },
-      "macro_f1": 0.9390620782726046,
-      "false_alarm_rate": 0.05128205128205128,
+      "macro_f1": 0.9517016317016317,
+      "false_alarm_rate": 0.02564102564102564,
       "negative_sentences": 39,
-      "negative_sentences_with_alarm": 2
+      "negative_sentences_with_alarm": 1
     }
   },
   "handwritten_test/DistilBERT + post-proc": {
@@ -1979,7 +2339,7 @@
       "negative_sentences_with_alarm": 2
     }
   },
-  "handwritten_test/DistilBERT + post-proc + checksum (final)": {
+  "handwritten_test/DistilBERT + post-proc + checksum": {
     "strict": {
       "per_label": {
         "AADHAAR": {
@@ -2001,20 +2361,20 @@
           "support": 15
         },
         "PHONE": {
-          "precision": 0.9310344827586207,
+          "precision": 1.0,
           "recall": 0.9642857142857143,
-          "f1": 0.9473684210526316,
+          "f1": 0.9818181818181818,
           "tp": 27,
-          "fp": 2,
+          "fp": 0,
           "fn": 1,
           "support": 28
         },
         "EMAIL": {
-          "precision": 0.875,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.9333333333333333,
+          "f1": 1.0,
           "tp": 14,
-          "fp": 2,
+          "fp": 0,
           "fn": 0,
           "support": 14
         },
@@ -2056,18 +2416,18 @@
         }
       },
       "micro": {
-        "precision": 0.9075144508670521,
+        "precision": 0.9289940828402367,
         "recall": 0.9345238095238095,
-        "f1": 0.9208211143695015,
+        "f1": 0.9317507418397627,
         "tp": 157,
-        "fp": 16,
+        "fp": 12,
         "fn": 11,
         "support": 168
       },
-      "macro_f1": 0.9470937524807493,
-      "false_alarm_rate": 0.05128205128205128,
+      "macro_f1": 0.9597333059097765,
+      "false_alarm_rate": 0.02564102564102564,
       "negative_sentences": 39,
-      "negative_sentences_with_alarm": 2
+      "negative_sentences_with_alarm": 1
     },
     "partial": {
       "per_label": {
@@ -2090,20 +2450,20 @@
           "support": 15
         },
         "PHONE": {
-          "precision": 0.9310344827586207,
+          "precision": 1.0,
           "recall": 0.9642857142857143,
-          "f1": 0.9473684210526316,
+          "f1": 0.9818181818181818,
           "tp": 27,
-          "fp": 2,
+          "fp": 0,
           "fn": 1,
           "support": 28
         },
         "EMAIL": {
-          "precision": 0.875,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.9333333333333333,
+          "f1": 1.0,
           "tp": 14,
-          "fp": 2,
+          "fp": 0,
           "fn": 0,
           "support": 14
         },
@@ -2145,18 +2505,378 @@
         }
       },
       "micro": {
-        "precision": 0.9364161849710982,
+        "precision": 0.9585798816568047,
         "recall": 0.9642857142857143,
-        "f1": 0.9501466275659823,
+        "f1": 0.9614243323442135,
         "tp": 162,
-        "fp": 11,
+        "fp": 7,
         "fn": 6,
         "support": 168
       },
-      "macro_f1": 0.956709137096134,
-      "false_alarm_rate": 0.05128205128205128,
+      "macro_f1": 0.9693486905251611,
+      "false_alarm_rate": 0.02564102564102564,
       "negative_sentences": 39,
-      "negative_sentences_with_alarm": 2
+      "negative_sentences_with_alarm": 1
+    }
+  },
+  "handwritten_test/DistilBERT + post-proc + words + checksum": {
+    "strict": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 16,
+          "fp": 0,
+          "fn": 0,
+          "support": 16
+        },
+        "PAN": {
+          "precision": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "f1": 0.9333333333333333,
+          "tp": 14,
+          "fp": 1,
+          "fn": 1,
+          "support": 15
+        },
+        "PHONE": {
+          "precision": 1.0,
+          "recall": 0.9642857142857143,
+          "f1": 0.9818181818181818,
+          "tp": 27,
+          "fp": 0,
+          "fn": 1,
+          "support": 28
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 14,
+          "fp": 0,
+          "fn": 0,
+          "support": 14
+        },
+        "BANK_ACCOUNT": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1": 0.9600000000000001,
+          "tp": 12,
+          "fp": 0,
+          "fn": 1,
+          "support": 13
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "support": 9
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "support": 10
+        },
+        "PERSON": {
+          "precision": 0.967741935483871,
+          "recall": 0.9523809523809523,
+          "f1": 0.96,
+          "tp": 60,
+          "fp": 2,
+          "fn": 3,
+          "support": 63
+        }
+      },
+      "micro": {
+        "precision": 0.9817073170731707,
+        "recall": 0.9583333333333334,
+        "f1": 0.9698795180722892,
+        "tp": 161,
+        "fp": 3,
+        "fn": 7,
+        "support": 168
+      },
+      "macro_f1": 0.9720409982174688,
+      "false_alarm_rate": 0.02564102564102564,
+      "negative_sentences": 39,
+      "negative_sentences_with_alarm": 1
+    },
+    "partial": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 16,
+          "fp": 0,
+          "fn": 0,
+          "support": 16
+        },
+        "PAN": {
+          "precision": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "f1": 0.9333333333333333,
+          "tp": 14,
+          "fp": 1,
+          "fn": 1,
+          "support": 15
+        },
+        "PHONE": {
+          "precision": 1.0,
+          "recall": 0.9642857142857143,
+          "f1": 0.9818181818181818,
+          "tp": 27,
+          "fp": 0,
+          "fn": 1,
+          "support": 28
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 14,
+          "fp": 0,
+          "fn": 0,
+          "support": 14
+        },
+        "BANK_ACCOUNT": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1": 0.9600000000000001,
+          "tp": 12,
+          "fp": 0,
+          "fn": 1,
+          "support": 13
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "support": 9
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "support": 10
+        },
+        "PERSON": {
+          "precision": 0.9838709677419355,
+          "recall": 0.9682539682539683,
+          "f1": 0.976,
+          "tp": 61,
+          "fp": 1,
+          "fn": 2,
+          "support": 63
+        }
+      },
+      "micro": {
+        "precision": 0.9878048780487805,
+        "recall": 0.9642857142857143,
+        "f1": 0.9759036144578312,
+        "tp": 162,
+        "fp": 2,
+        "fn": 6,
+        "support": 168
+      },
+      "macro_f1": 0.9740409982174688,
+      "false_alarm_rate": 0.02564102564102564,
+      "negative_sentences": 39,
+      "negative_sentences_with_alarm": 1
+    }
+  },
+  "handwritten_test/DistilBERT + normalise + post-proc + repair (final)": {
+    "strict": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 16,
+          "fp": 0,
+          "fn": 0,
+          "support": 16
+        },
+        "PAN": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1": 0.967741935483871,
+          "tp": 15,
+          "fp": 1,
+          "fn": 0,
+          "support": 15
+        },
+        "PHONE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "support": 28
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 14,
+          "fp": 0,
+          "fn": 0,
+          "support": 14
+        },
+        "BANK_ACCOUNT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "support": 13
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "support": 9
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "support": 10
+        },
+        "PERSON": {
+          "precision": 1.0,
+          "recall": 0.9682539682539683,
+          "f1": 0.9838709677419354,
+          "tp": 61,
+          "fp": 0,
+          "fn": 2,
+          "support": 63
+        }
+      },
+      "micro": {
+        "precision": 0.9940119760479041,
+        "recall": 0.9880952380952381,
+        "f1": 0.991044776119403,
+        "tp": 166,
+        "fp": 1,
+        "fn": 2,
+        "support": 168
+      },
+      "macro_f1": 0.9939516129032258,
+      "false_alarm_rate": 0.02564102564102564,
+      "negative_sentences": 39,
+      "negative_sentences_with_alarm": 1
+    },
+    "partial": {
+      "per_label": {
+        "AADHAAR": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 16,
+          "fp": 0,
+          "fn": 0,
+          "support": 16
+        },
+        "PAN": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1": 0.967741935483871,
+          "tp": 15,
+          "fp": 1,
+          "fn": 0,
+          "support": 15
+        },
+        "PHONE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 28,
+          "fp": 0,
+          "fn": 0,
+          "support": 28
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 14,
+          "fp": 0,
+          "fn": 0,
+          "support": 14
+        },
+        "BANK_ACCOUNT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "support": 13
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "support": 9
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "support": 10
+        },
+        "PERSON": {
+          "precision": 1.0,
+          "recall": 0.9682539682539683,
+          "f1": 0.9838709677419354,
+          "tp": 61,
+          "fp": 0,
+          "fn": 2,
+          "support": 63
+        }
+      },
+      "micro": {
+        "precision": 0.9940119760479041,
+        "recall": 0.9880952380952381,
+        "f1": 0.991044776119403,
+        "tp": 166,
+        "fp": 1,
+        "fn": 2,
+        "support": 168
+      },
+      "macro_f1": 0.9939516129032258,
+      "false_alarm_rate": 0.02564102564102564,
+      "negative_sentences": 39,
+      "negative_sentences_with_alarm": 1
     }
   }
 }
